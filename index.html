@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Student Management System</h1>
+    </header>
+    <main>
+        <section id="user-authentication">
+            <h2>User Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <section id="student-profile" class="hidden">
+            <h2>Student Profile</h2>
+            <p><strong>Name:</strong> <span id="student-name"></span></p>
+            <p><strong>Course:</strong> <span id="student-course"></span></p>
+        </section>
+
+        <section id="course-enrollment" class="hidden">
+            <h2>Course Enrollment</h2>
+            <form id="enrollment-form">
+                <label for="course">Select Course:</label>
+                <select id="course">
+                    <option value="Math">Math</option>
+                    <option value="Science">Science</option>
+                    <option value="History">History</option>
+                </select>
+                <button type="submit">Enroll</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Student Management System</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
